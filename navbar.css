@@ -1,0 +1,10 @@
+ul
+{
+    display:flex;
+    justify-content: space-between;
+}
+li
+{
+    text-decoration: none;
+    list-style:none;
+}

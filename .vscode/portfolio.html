@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio with Cream and Pista Green Theme</title>
+  <style>
+    /* General Reset and Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fffdf5; /* Cream background */
+    }
+    a {
+      text-decoration: none;
+      color: #66a36c; /* Pista green */
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #66a36c; /* Pista green */
+      color: white;
+      padding: 1.5rem 0;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      font-size: 1.1rem;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    section:nth-child(odd) {
+      background-color: #fef7e8; /* Light cream */
+    }
+    section:nth-child(even) {
+      background-color: #fffdf5; /* Slightly darker cream */
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #66a36c; /* Pista green */
+    }
+    section p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+    }
+
+    /* About Section with Profile Photo */
+    #about img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 3px solid #66a36c; /* Pista green border */
+    }
+
+    /* Projects Section */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;
+      padding: 2rem;
+    }
+    .project {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      text-align: left;
+    }
+    .project h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.5rem;
+      color: #66a36c;
+    }
+    .project p {
+      font-size: 1rem;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #66a36c; /* Pista green */
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    footer p {
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #fffdf5; /* Light cream for footer links */
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+      .projects {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <!-- Profile Photo -->
+    <img src="profile.jpg" alt="Your Profile Photo">
+    <p>Hi, I’m <strong>[Your Name]</strong>, a passionate [Your Role/Profession]. I specialize in [Your Skills/Technologies].</p>
+    <p>I enjoy creating projects that make a difference and continuously learning to improve my craft.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Project 1: [Project Name]</h3>
+        <p>A brief description of Project 1. This could highlight the problem it solves or the technology used.</p>
+      </div>
+      <div class="project">
+        <h3>Project 2: [Project Name]</h3>
+        <p>A brief description of Project 2. Showcase its unique features or challenges you overcame.</p>
+      </div>
+      <div class="project">
+        <h3>Project 3: [Project Name]</h3>
+        <p>A brief description of Project 3. Explain its importance or the value it provides to users.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+    <p>Phone: +123 456 7890</p>
+    <p>Find me on:
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a> |
+      <a href="https://github.com" target="_blank">GitHub</a>
+    </p>
+</section>
+</body>
+</html>
